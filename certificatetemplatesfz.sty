@@ -1,0 +1,63 @@
+\usepackage[utf8]{inputenc}
+\pagenumbering{gobble}
+
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\renewcommand*\familydefault{\sfdefault}
+
+\newcommand{\sfzcertificate}[8]{
+    \noindent\includegraphics[width=0.3\textwidth]{Logo_SFZ}\hfill \textbf{#1}
+
+    \vspace{1cm}
+
+    \begin{center}
+        {\Huge\textbf{Teilnahmebestätigung}}
+        \vspace{1cm}
+        
+        {\huge #2}
+        \vspace{1cm}
+    \end{center}
+
+    \noindent hat #3 an einem Workshop des Schülerforschungszentrums Südwürttemberg zum Thema
+    \vspace{0.3cm}
+
+    \begin{center}
+        \Large\textbf{#4}
+    \end{center}
+    \vspace{0.3cm}
+
+    \noindent teilgenommen.
+    \vspace{1cm}
+
+    \ifx&#5&\else
+    \noindent \textbf{Im Rahmen des Workshops wurden folgende Themen behandelt:}
+    \begin{itemize}
+        #5
+    \end{itemize}
+    \fi
+    \vspace{2.5cm}
+    \ifx&#6&\else
+    \begin{minipage}{0.3\textwidth}
+        \rule{\textwidth}{0.4pt}\\
+        #6\\
+        Kursleiter
+    \end{minipage}
+    \fi
+    \ifx&#7&\else
+    \hspace{0.5cm}
+    \begin{minipage}{0.3\textwidth}
+        \rule{\textwidth}{0.4pt}\\
+        #7\\
+        Kursleiter
+    \end{minipage}
+    \fi
+    \ifx&#8&\else
+    \hspace{0.5cm}
+    \begin{minipage}{0.3\textwidth}
+        \rule{\textwidth}{0.4pt}\\
+        #8\\
+        Kursleiter
+    \end{minipage}
+    \fi
+    
+}
